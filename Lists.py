@@ -27,7 +27,7 @@ def average (x):
     total = 0
     for i in x:
         total = total + i
-        average_marks = total / len(x)
+    average_marks = total / len(x)
     return average_marks
 
 print(f"The average marks of 4W, 4E, and 4S are as follows: 4W: {average(four_west_marks)},"
