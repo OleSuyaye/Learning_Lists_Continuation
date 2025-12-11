@@ -16,7 +16,20 @@ def min_digit (x):
             min_number = i
     return min_number
 
-print(f"The highest marks in 4W is {max_digit(four_west_marks)}, and the lowest marks is {min_digit(four_west_marks)}")
-print(f"The highest marks in 4E is {max_digit(four_east_marks)}, and the lowest marks is {min_digit(four_east_marks)}")
-print(f"The highest marks in 4S is {max_digit(four_south_marks)}, and the lowest marks is {min_digit(four_south_marks)}")
+print(f"The highest marks in 4W is {max_digit(four_west_marks)}, "
+      f"and the lowest marks is {min_digit(four_west_marks)}")
+print(f"The highest marks in 4E is {max_digit(four_east_marks)}, "
+      f"and the lowest marks is {min_digit(four_east_marks)}")
+print(f"The highest marks in 4S is {max_digit(four_south_marks)}, "
+      f"and the lowest marks is {min_digit(four_south_marks)}")
 
+def average (x):
+    total = 0
+    for i in x:
+        total = total + i
+        average_marks = total / len(x)
+    return average_marks
+
+print(f"The average marks of 4W, 4E, and 4S are as follows: 4W: {average(four_west_marks)},"
+      f" 4E: {average(four_east_marks)},"
+      f" 4S: {average(four_south_marks)}.")
